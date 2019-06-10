@@ -86,6 +86,8 @@ class MainViewModel @Inject constructor(
                 {
 
                     userList = it
+
+                    Log.d(TAG, "Get All Users ${it.toString()}")
                     users.postValue(it)
                 },
                 {

@@ -27,17 +27,7 @@ class ApplicationModule(private val application: MyApplication){
         return "abc"
     }
 
-    @Provides
-    @DatabaseInfo
-    fun provideDatabaseName(): String{
-        return "xyz"
-    }
 
-    @Provides
-    @DatabaseInfo
-    fun provideDatabaseVersion(): Int{
-        return 1
-    }
 
     @Provides
     @Singleton
